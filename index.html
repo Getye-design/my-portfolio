@@ -1,132 +1,110 @@
 <!DOCTYPE html>
-<html>
-<!--Head-->
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
-    <title>Your Name Here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getnet Wakene Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
 </head>
-
-<!--Body-->
-
 <body class="Background">
 
-    <!--Navbar-->
-    <div class="Navbar">
+    <!-- Navigation Bar -->
+    <nav class="Navbar" aria-label="Main Navigation">
         <a class="active" href="#Home">Home</a>
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
         <a href="#Contact">Contact</a>
-    </div>
+    </nav>
 
-    <!--Breaks inserted to add space between navbar and the first heading-->
-    <br />
-    <br />
+    <!-- Spacing between navbar and first section -->
+    <div style="margin-top: 20px;"></div>
 
-    <!--Background video-->
-    <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
-            <source src="images\video\holographic.mp4" type="video/mp4">
-            <!--Display message if video fails to run-->
+    <!-- Background video -->
+    <section id="Home">
+        <video autoplay muted loop id="Typing_Video" aria-label="Holographic background video">
+            <source src="images/video/holographic.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
-    </div>
-
-    <!--Video text-->
-    <div class="Video_Text">
-        <h1 class="white-text">Getnet's Portfolio</h1>
-        <strong>
+        <div class="Video_Text">
+            <h1 class="white-text">Getnet's Portfolio</h1>
             <p class="center">
-                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute
-                    authority to arrange a stage or
-                    <br>field of battle and to command such unswervingly dutiful actors or troops.
+                <q>
+                    The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or field of battle and to command such unswervingly dutiful actors or troops.
                 </q>
                 <br> -Joseph Weizenbaum
-                <br>
-                <br> My name is Getnet Wakene. Welcome to my portfolio website. On it, I will tell you about my
-                background and experience.
-                <br>
-                <br> Thank you for stopping by and enjoy!
+                <br><br>
+                My name is Getnet Wakene. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br><br>Thank you for stopping by and enjoy!
             </p>
-        </strong>
-    </div>
-
-    <!--About section-->
-    <div class="Row" id="About">
-        <!--Left column-->
-        <div class="Column_2">
-            <img src="images\Getye-pic.jpg" alt="Replace with your own image and description">
         </div>
-        <!--Right column-->
+    </section>
+
+    <!-- About Section -->
+    <section class="Row" id="About">
+        <div class="Column_2">
+            <img src="images/Getye-pic.jpg" alt="Getnet Wakene's profile picture">
+        </div>
         <div class="Column_1">
             <h1>About</h1>
             <p>
-                I am a junior software developer studying at <a href="https://www.learncodinganywhere.com"
-                    target="_blank">The Tech Academy's</a>’ Software Developer Boot Camp. I have experience with HTML,
-                CSS, JavaScript which has helped me build skills in web development and programming. 
-                <br>
-                <br>
-                I have completed various projects that showcase my ability to code efficiently and solve problems. I am
-                focused on improving my skills and keeping up with industry advancements.
-                <br>
-                <br>
-                You can contact me at getyeb@yahoo.com.
+                I am a junior software developer studying at 
+                <a href="https://www.learncodinganywhere.com" target="_blank" rel="noopener noreferrer">The Tech Academy</a>'s Software Developer Boot Camp. I have experience with HTML, CSS, and JavaScript, which has helped me build skills in web development and programming.
+                <br><br>
+                I have completed various projects that showcase my ability to code efficiently and solve problems. I am focused on improving my skills and keeping up with industry advancements.
+                <br><br>
+                You can contact me at <a href="mailto:getyeb@yahoo.com">getyeb@yahoo.com</a>.
+            </p>
         </div>
-    </div>
+    </section>
 
-    <!--GitHub section-->
-    <div class="Row" id="GitHub">
-        <!--Left column-->
+    <!-- GitHub Section -->
+    <section class="Row" id="GitHub">
         <div class="Column_1">
             <h1>GitHub</h1>
             <p>
                 You can view my coding projects on my GitHub profile here:
                 <br>
-            <p class="center"><a href="https://github.com/Getye-design/Getye-design" target="_blank">Getye Design GitHub Projects</a>
-            </p>
+                <p class="center">
+                    <a href="https://github.com/Getye-design/Getye-design" target="_blank" rel="noopener noreferrer">Getye Design GitHub Projects</a>
+                </p>
             </p>
         </div>
-        <!--Right column-->
         <div class="Column_2">
-            <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png"
-                    alt="GitHub Logo"></a>
+            <a href="https://github.com/the-tech-academy" target="_blank" rel="noopener noreferrer">
+                <img src="images/GitHub.png" alt="GitHub Logo">
+            </a>
         </div>
-    </div>
+    </section>
 
-    <!--Contact section-->
-    <div class="Row" id="Contact">
-        <!--Contact image, left column-->
+    <!-- Contact Section -->
+    <section class="Row" id="Contact">
         <div class="Column_2 Column_tall">
-            <img src="images\getye-design.jpg" alt="Contact_Image">
+            <img src="images/getye-design.jpg" alt="Getnet Wakene contact graphic">
         </div>
-        <!--Contact form, right column-->
         <div class="Column_1 Column_tall">
             <h1>Contact</h1>
-            <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form action="" method="POST">
-                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+            <form action="https://formspree.io/your-email" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Please enter your name here" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Please enter your email here" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Please write your message here" rows="4" required></textarea>
+                
                 <input type="submit" value="SUBMIT">
             </form>
         </div>
-    </div>
+    </section>
 
-    <!--Footer section-->
+    <!-- Footer -->
     <footer>
-        <p>
-        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
-                target="_blank">The Tech Academy</a></p>
-        <br>
+        <p class="center">
+            &copy; Prosper Consulting Inc., 
+            <a href="https://www.learncodinganywhere.com/" target="_blank" rel="noopener noreferrer">The Tech Academy</a>
         </p>
     </footer>
-</body>
 
+</body>
 </html>
